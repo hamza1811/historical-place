@@ -1,0 +1,28 @@
+.back-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.overview-info {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-footer {
+  background-color: var(--tertary-color);
+  border-top: 1px solid #ddd;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

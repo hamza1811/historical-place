@@ -1,0 +1,26 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: var(--tertary-color); /* Using theme background color */
+  }
+  
+  /* Header Logo */
+  .header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-start); /* Theme primary color */
+    margin: 0;
+  }
+  
+  /* Button Styling */
+  .header-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+
+  

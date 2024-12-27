@@ -1,0 +1,55 @@
+/* theme.css */
+
+/* Define custom theme colors */
+:root {
+  --primary-start: #90EE90; /* Light green (start of gradient) */
+  --primary-end: #76c76f;   /* Slightly darker green (end of gradient) */
+  --secondary-color: #D3D3D3; /* Light gray */
+  --tertary-color: #ffffff;
+  --font-color-white: #ffffff; /* Black font color */
+}
+
+/* Override Bootstrap btn-primary styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-start), var(--primary-end)) !important;
+  border-color: var(--primary-end) !important; /* Border matches the end of the gradient */
+  color: var(--font-color-white) !important;
+  transition: background 0.4s ease-in-out, border-color 0.4s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+/* Hover state - Animated with the same gradient but a slight change */
+.btn-primary:hover {
+  background: linear-gradient(135deg, #76c76f, #90EE90) !important; /* Reverse the gradient for visual effect */
+  border-color: #76c76f !important; /* Adjust the border color */
+  transform: scale(1.05); /* Slightly increase the size of the button */
+}
+
+/* Optional: Button active state - Maintain gradient, can be customized */
+.btn-primary:active {
+  background: linear-gradient(135deg, var(--primary-start), var(--primary-end)) !important;
+  border-color: var(--primary-end) !important;
+}
+
+/* Optional: Disabled button state */
+.btn-primary:disabled {
+  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-color)) !important;
+  border-color: var(--secondary-color) !important;
+  color: #666 !important;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #76c76f !important; /* Green background */
+  border-color: #76c76f !important; /* Green border */
+}
+
+/* Optional: Change the checkmark color to white when checked */
+input[type="checkbox"]:checked::before {
+  background-color: #76c76f !important; /* Green background */
+  border-color: #76c76f !important; /* Green border */
+  color: rgb(0, 0, 0) !important; /* Make the checkmark white */
+}
+
+/* Optional: Change the checkbox's hover state to green */
+input[type="checkbox"]:hover {
+  border-color: #76c76f !important; /* Green border on hover */
+}
