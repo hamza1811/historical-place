@@ -28,4 +28,4 @@ This project is a React TypeScript application that showcases a list of historic
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/historical-places-api.git
+git clone https://github.com/hamza1811/historical-place.git
